@@ -20,12 +20,7 @@ source djangoenv/bin/activate
 
 ## Things you need to install:\
 
-1. Pyhon
-2. django after accessing the virtaul environment
-
-```
-sudo pip install django
-```
+https://www.youtube.com/watch?v=9h9SC34tNNU
 
 ## How to start website locally:
 
