@@ -120,26 +120,9 @@ The theme used to style this starter provides the following files:
    |-- ************************************************************************
 ```
 
-When the project requires customization, we need to copy the original file that needs an update (from the virtual environment) and place it in the template folder using the same path.
+## Youtube tutorial:
 
-> For instance, if we want to **customize the footer.html** these are the steps:
-
-- ✅ `Step 1`: create the `templates` DIRECTORY inside the `home` app
-- ✅ `Step 2`: configure the project to use this new template directory
-  - `core/settings.py` TEMPLATES section
-- ✅ `Step 3`: copy the `footer.html` from the original location (inside your ENV) and save it to the `home/templates` DIR
-  - Source PATH: `<YOUR_ENV>/LIB/admin_adminlte/template/includes/footer.html`
-  - Destination PATH: `<PROJECT_ROOT>home/templates/includes/footer.html`
-
-> To speed up all these steps, the **codebase is already configured** (`Steps 1, and 2`) and a `custom footer` can be found at this location:
-
-`home/templates/includes/custom_footer.html`
-
-By default, this file is unused because the `theme` expects `footer.html` (without the `custom-` prefix).
-
-In order to use it, simply rename it to `footer.html`. Like this, the default version shipped in the library is ignored by Django.
-
-In a similar way, all other files and components can be customized easily.
+https://www.youtube.com/watch?v=D8zaXFtVF2w
 
 <br />
 
