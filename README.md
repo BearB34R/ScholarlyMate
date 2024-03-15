@@ -4,14 +4,7 @@ Allows students to create a personalized study schedule, set reminders for assig
 
 ## Start the app in Docker
 
-> 👉 **Step 1** - Download the code from the GH repository (using `GIT`)
-
-```bash
-$ git clone https://github.com/app-generator/django-adminlte.git
-$ cd django-adminlte
-```
-
-> 👉 **Step 2** - Start the APP in `Docker`
+The easiest way to start up btw if you have docker
 
 ```bash
 $ docker-compose up --build
@@ -23,30 +16,24 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 
 ## Manual Build
 
-> 👉 Download the code
+### Start Virtual environment:
 
-```bash
-$ git clone https://github.com/app-generator/django-adminlte.git
-$ cd django-adminlte
+#### For windows:
+
+```
+.\djangoenv\Scripts\activate
 ```
 
-<br />
+#### For Unix or MacOS:
 
-> 👉 Install modules via `VENV`
-
-```bash
-$ virtualenv env
-$ source env/bin/activate
-$ pip install -r requirements.txt
+```
+source djangoenv/bin/activate
 ```
 
-<br />
+### 👉 Run bash script <=========Made it easier for yalls
 
-> 👉 Set Up Database
-
-```bash
-$ python manage.py makemigrations
-$ python manage.py migrate
+```
+bash build.sh
 ```
 
 <br />
@@ -65,13 +52,11 @@ $ python manage.py createsuperuser
 $ python manage.py runserver
 ```
 
-At this point, the app runs at `http://127.0.0.1:8000/`.
+the app runs at `http://127.0.0.1:8000/`.
 
 <br />
 
 ## Codebase structure
-
-The project is coded using a simple and intuitive structure presented below:
 
 ```bash
 < PROJECT ROOT >
@@ -154,3 +139,7 @@ In order to use it, simply rename it to `footer.html`. Like this, the default ve
 In a similar way, all other files and components can be customized easily.
 
 <br />
+
+# Template Docs:
+
+https://docs.appseed.us/products/django-dashboards/adminlte
