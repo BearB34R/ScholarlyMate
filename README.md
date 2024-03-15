@@ -20,6 +20,10 @@ source djangoenv/bin/activate
 
 ## Things you need to install:\
 
+```
+pip install django-admin-soft-dashboard
+```
+
 https://www.youtube.com/watch?v=9h9SC34tNNU
 
 ## How to start website locally:
