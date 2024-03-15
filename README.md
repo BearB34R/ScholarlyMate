@@ -34,6 +34,8 @@ source djangoenv/bin/activate
 
 ### 👉 Run bash script <=========Made it easier for yalls
 
+- this bash script installs all requirements and runs the manage.py
+
 ```
 bash build.sh
 ```
@@ -43,7 +45,7 @@ bash build.sh
 > 👉 Create the Superuser
 
 ```bash
-$ python manage.py createsuperuser
+python manage.py createsuperuser
 ```
 
 <br />
@@ -51,7 +53,7 @@ $ python manage.py createsuperuser
 > 👉 Start the app
 
 ```bash
-$ python manage.py runserver
+python manage.py runserver
 ```
 
 the app runs at `http://127.0.0.1:8000/`.
