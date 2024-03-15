@@ -44,7 +44,7 @@ python manage.py createsuperuser
 #### Start the application (development mode)
 
 ```
-python manage.py runserver # default port 8000
+python manage.py runserver
 ```
 
 Access the admin section in the browser: http://127.0.0.1:8000/
