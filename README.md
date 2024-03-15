@@ -18,6 +18,15 @@ For Unix or MacOS:
 source djangoenv/bin/activate
 ```
 
+## Things you need to install:\
+
+1. Pyhon
+2. django after accessing the virtaul environment
+
+```
+sudo pip install django
+```
+
 ## How to start website locally:
 
 ```
