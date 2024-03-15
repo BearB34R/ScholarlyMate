@@ -20,6 +20,8 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 
 ### 1. make Virtual environment:
 
+- if you don't have it run "pip install virutalenv"
+
 ```bash
 virtualenv djangoenv
 ```
@@ -63,6 +65,11 @@ python manage.py runserver
 ```
 
 the app runs at `http://127.0.0.1:8000/`.
+
+## To see admin
+
+- add "/admin" to the end the end of the url
+- login using your superuser account
 
 <br />
 
