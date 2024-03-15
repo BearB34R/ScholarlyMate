@@ -16,9 +16,15 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 
 <br />
 
-## Manual Build
+## Manual Build (Steps)
 
-### Start Virtual environment:
+### 1. make Virtual environment:
+
+```bash
+virtualenv djangoenv
+```
+
+### 2. Start virtual environment:
 
 #### For windows:
 
@@ -32,7 +38,7 @@ Visit `http://localhost:5085` in your browser. The app should be up & running.
 source djangoenv/bin/activate
 ```
 
-### 👉 Run bash script <=========Made it easier for yalls
+### 3. Run bash script <=========Made it easier for yalls
 
 - this bash script installs all requirements and runs the manage.py
 
@@ -42,7 +48,7 @@ bash build.sh
 
 <br />
 
-> 👉 Create the Superuser
+### 4. Create the Superuser
 
 ```bash
 python manage.py createsuperuser
@@ -50,7 +56,7 @@ python manage.py createsuperuser
 
 <br />
 
-> 👉 Start the app
+### 5. 👉 Start the app
 
 ```bash
 python manage.py runserver
