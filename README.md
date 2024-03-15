@@ -4,10 +4,12 @@ Allows students to create a personalized study schedule, set reminders for assig
 
 ## Start the app in Docker
 
-The easiest way to start up btw if you have docker
+The easiest way to start up btw if you have docker don't worry about this if you already did the manual
 
-```bash
-$ docker-compose up --build
+- if this is causing you trouble just use the manual build
+
+```
+docker-compose up --build
 ```
 
 Visit `http://localhost:5085` in your browser. The app should be up & running.
@@ -76,7 +78,6 @@ the app runs at `http://127.0.0.1:8000/`.
    |
    |-- requirements.txt                  # Project Dependencies
    |
-   |-- env.sample                        # ENV Configuration (default values)
    |-- manage.py                         # Start the app - Django default start script
    |
    |-- ************************************************************************
@@ -90,7 +91,7 @@ When a template file is loaded, `Django` scans all template directories starting
 The theme used to style this starter provides the following files:
 
 ```bash
-# This exists in ENV: LIB/admin_adminlte
+# This exists in "djangoenv" director: ./djangoenv/LIB/admin_adminlte
 < UI_LIBRARY_ROOT >
    |
    |-- templates/                     # Root Templates Folder
