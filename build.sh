@@ -8,3 +8,6 @@ pip install -r requirements.txt
 
 python3 manage.py collectstatic --no-input
 python3 manage.py migrate
+
+#All AUTH
+pip install django-allauth
