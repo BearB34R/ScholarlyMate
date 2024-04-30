@@ -3,6 +3,6 @@ from django.http import HttpResponse
 
 # Create your views here.
 
-def login(request):
-    # Page frm the theme o
-    return render(request, 'accounts/login.html')
+def calendar(request):
+    # Page from the theme 
+    return render(request, 'pages/calendar.html')
