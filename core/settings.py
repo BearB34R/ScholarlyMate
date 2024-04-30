@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     "home",
+    "dashboard",
 
     "django.contrib.sites",
     'allauth',
@@ -187,5 +188,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-LOGIN_REDIRECT_URL = '/'
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+SOCIALACCOUNT_PROVIDERS = {}
+
+ACCOUNT_AUTHENTICATION_METHOD = ( "email", "username")
+ACCOUNT_EMAIL_REQUIRED = True
