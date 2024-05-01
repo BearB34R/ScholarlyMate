@@ -61,10 +61,28 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-
     'allauth.socialaccount.providers.google',
 ]
 
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'APP': {
+            'client_id': '849632185941-jhrt6a3d4vcihh7ovnec141606q8am8l.apps.googleusercontent.com',
+            'secret': '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',
+            'key': ''
+        },
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
+}
+
+ACCOUNT_AUTHENTICATION_METHOD = ( "email", "username")
+ACCOUNT_EMAIL_REQUIRED = True
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -189,8 +207,3 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-SOCIALACCOUNT_PROVIDERS = {}
-
-ACCOUNT_AUTHENTICATION_METHOD = ( "email", "username")
-ACCOUNT_EMAIL_REQUIRED = True
