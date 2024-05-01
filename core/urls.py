@@ -23,7 +23,8 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", include('admin_adminlte.urls')),
     path('accounts/', include('allauth.urls')),
-    path('accounts/', include('allauth.socialaccount.urls')),
     path('accounts/profile/', views.calendar, name="calendar"),
     path('accounts/profile/', auth_views.LoginView.as_view(), name='calendar'),
+
     ]
+
