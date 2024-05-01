@@ -25,6 +25,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
     path('accounts/profile/', views.calendar, name="calendar"),
     path('accounts/profile/', auth_views.LoginView.as_view(), name='calendar'),
-
+    path('accounts/profile/home', views.index, name='home'),
     ]
 
