@@ -2,5 +2,5 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def login(request):
-    # Page frm the theme o
+    # Page from the theme
     return render(request, 'accounts/login.html')
